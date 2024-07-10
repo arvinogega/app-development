@@ -1,0 +1,79 @@
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+/*-----Grid System-----*/
+img{width: 100%;display: block; height: 100%;}
+.grid-container{
+display: grid;
+grid-template-columns: auto auto auto;
+width: 1200px;
+margin: 20px auto;
+background-color:rgb(rgb(77, 20, 20), green, blue);
+box-shadow: 1px 1px 3px gray;
+}
+.img-container{
+    margin: 10px;
+    border: solid black 2px;
+}
+/*-----Media Query -------*/
+@media screen and (max-width:1200px)
+{
+.grid-container{
+    background-color: pink;
+    grid-template-columns: auto auto ;
+}    
+}
+/*breakpoint for medium screen size up to 900 px*/
+@media screen and (max-width:900px)
+{
+.grid-container{
+    background-color: chartreuse;
+    grid-template-columns: auto ;
+}  
+}
+/*------Main Container ------*/
+.header-container{
+    background-color: red;
+    color: white;
+    display: flex;}
+    .header-container > div{
+        border: solid red 1px;
+        padding: 20 px;
+    }
+.header-container>div:nth-child(3)
+{
+    margin-left: auto;
+}
+/*intro container */
+.img-container{
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+}
+.nav-menu{
+    background-color: blue;
+}
+.content{
+    background-color: pink;
+}
+.blog{
+    background-color: beige;
+}
+.footer{
+    background-color: black;
+    color: white;
+    height: 200 px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.footer >div{
+    border: solid pink 2px;
+}
+/*breakpoint up to 900 px */
+@media screen and (max-width:900 px)
+ {
+    .nav-menu{
+        background-color: olive;
+    }
+    .content{grid-column: span 2 ;}
+    .blog{grid-column: span 3;
+    }
+}
