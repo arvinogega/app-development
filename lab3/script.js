@@ -24,14 +24,16 @@ btncircle.addEventListener("click",function(){
     displayshape.textContent="circle".toUpperCase()
 })
 
-/*dropdown menu */
+/**
+ * dropdown menu
+ */
 //collect the element
 let menubtn=document.querySelector(",menubtn")
 let collapsemenu=document.querySelector(".collapsemenu")
 //add an click event to open the collapsible menu
 menubtn.addEventListener("click",function(){
 
-collapsemenu.classList.toggle=("closeToOpen")
+collapsemenu.classList.toggle("closeToOpen")
 
 })
 /*--modal window--*/
@@ -52,5 +54,5 @@ emodal.addEventListener("click",function)(){
 }
 //close the modal window when the user clicks anywhere on the mmodal screen
 window.addEventListener("click",function(){
-    if(this.event.tagert)
+    if(this.)
 })
