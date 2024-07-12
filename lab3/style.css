@@ -1,0 +1,108 @@
+*{box-sizing: border-box;}
+.title{text-align: center;color: magenta;margin-top: 100px;}
+/*-----Shapes ------*/
+.shapeContainer{
+    width: 500px;
+    margin: 20px auto;
+    background-color: azure;
+    padding: 20px;
+    text-align: center;
+}
+.shapeDiv{
+    width: 200px;
+    color: purple !important;
+}
+    
+.square{
+    width: 200px;
+    background-color: blueviolet;
+}
+.rectangle{
+
+    width: 400px;
+    background-color: olive;
+}
+.circle{
+    
+    width: 200px;
+    border-radius: 50%;
+    background-color: crimson;
+}
+.square,.rectangle,.circle,.shapeDiv {
+    height:200px;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+    margin: 20px auto;
+}
+/*-----collapsible nav menu -----*/
+.header-container,.navMenu{
+    background-color: rgb(128, green, blue);
+    color: white;
+    display: flex;
+    width: 100%;
+}
+
+    
+    .header-container > div,.navMenu > div{
+        
+        padding: 20 px;
+    }
+
+.header-container>div:nth-child(2)
+{
+    margin-left: auto;
+}
+.headerNav{
+    position: fixed;
+    top:0%;
+    left: 0%;
+    right: 0%;
+}
+.navMenu{display: none;}
+.navMenu >div:nth-child(2)
+{
+    margin-left: auto;
+    cursor: pointer;
+}
+.collapsmenu{
+    background-color: rgb(rgb(80, 60, 60), green, blue);
+    padding: 20px;
+    display: none;/*hidden*/
+}
+.collapsmenu> div{
+    padding: 18px;
+color: white;
+}
+.collapsmenu >div:hover{
+    border-bottom: white 1px ridge;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.closeToOpen{
+    display: block;
+}
+@media screen and (max-width:900px)
+{
+  .header-container{
+    display: none;
+  } 
+  .navMenu{display: flex;} 
+}
+
+/*---MODAL WINDOW*/
+img{width: 100%;
+.card{width: 200px;
+border: solid gray;}
+cursor:pointer;
+}
+.card:hover{
+border: magenta 2px dashed;
+transform:scale(1.1);
+
+}
+.modalwindow{
+   background-color: rgb(red, green, blue);
+    position: ;
+    }

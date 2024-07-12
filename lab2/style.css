@@ -7,7 +7,7 @@ display: grid;
 grid-template-columns: auto auto auto;
 width: 1200px;
 margin: 20px auto;
-background-color:rgb(rgb(77, 20, 20), green, blue);
+background-color:rgb(250, 250, 250);
 box-shadow: 1px 1px 3px gray;
 }
 .img-container{
@@ -15,10 +15,12 @@ box-shadow: 1px 1px 3px gray;
     border: solid black 2px;
 }
 /*-----Media Query -------*/
+/*breakpount for large screen up to 1200 px*/
 @media screen and (max-width:1200px)
 {
 .grid-container{
     background-color: pink;
+    width: 800px;
     grid-template-columns: auto auto ;
 }    
 }
@@ -26,36 +28,39 @@ box-shadow: 1px 1px 3px gray;
 @media screen and (max-width:900px)
 {
 .grid-container{
-    background-color: chartreuse;
+    background-color: rgb(182, 215, 246);
+    width: 80%;
     grid-template-columns: auto ;
 }  
 }
 /*------Main Container ------*/
 .header-container{
-    background-color: red;
+    background-color: rgb(39, 145, 186);
     color: white;
-    display: flex;}
+    display: flex;
+}
+
     .header-container > div{
-        border: solid red 1px;
-        padding: 20 px;
+        padding: 20px;
     }
-.header-container>div:nth-child(3)
+.header-container >div:nth-child(3)
 {
     margin-left: auto;
 }
 /*intro container */
-.img-container{
+.intro-container{
     display: grid;
+    height: 300px;
     grid-template-columns: 30% 50% 20%;
 }
 .nav-menu{
-    background-color: blue;
+    background-color: lightblue;
 }
 .content{
-    background-color: pink;
+    background-color: rgb(86, 86, 243);
 }
 .blog{
-    background-color: beige;
+    background-color: rgb(17, 0, 246);
 }
 .footer{
     background-color: black;
@@ -65,15 +70,38 @@ box-shadow: 1px 1px 3px gray;
     grid-template-columns: auto auto auto;
 }
 .footer >div{
-    border: solid pink 2px;
-}
+    color: rgb(119, 112, 245);
+    border: solid rgb(159, 212, 248) 2px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+ }
+ .footer > div{
+    border: solid rgb(126, 166, 247);
+ }
+
 /*breakpoint up to 900 px */
-@media screen and (max-width:900 px)
+@media screen and (max-width:900px)
  {
     .nav-menu{
-        background-color: olive;
+        background-color: rgb(86, 86, 243);
     }
     .content{grid-column: span 2 ;}
     .blog{grid-column: span 3;
     }
+}
+/*--brakpoint up to 600px(smartphone view )--*/
+@media screen and (max-width:600px){
+    .nav-menu{
+        background-color: rgb(88, 88, 192);
+        grid-column: span 3;
+    }
+    .content{grid-column: span 3;
+    background-color:red;
+
+    }
+    .footer{grid-column: span 3;
+    background-color:rgb(238, 152, 152);
+
+}
 }
