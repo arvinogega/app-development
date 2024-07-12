@@ -97,21 +97,22 @@ color: white;
 img{width: 100%;display: block;}
 .card{
 width: 200px;
-border: solid gray;
+border: solid lightblue;
 cursor:pointer;
 }
 
 .card:hover{
-border: magenta 2px dashed;
-transform:scale(1.1);
+border: black 2px solid;
+transform:scale(1.01);
 }
 .modalwindow{
     background-color: rgba(30, 30, 30,0.8);
     position: fixed;
+    display: none;/*hiden*/
+    right: 0%;
     top: 0%;
     bottom: 0%;
-    left:0%
-    right : 0%;
+    left:0%    
 }
     .modalcontent{
         width:60% ;

@@ -28,8 +28,9 @@ btncircle.addEventListener("click",function(){
  * dropdown menu
  */
 //collect the element
-let menubtn=document.querySelector(",menubtn")
+let menubtn=document.querySelector(".menubtn")
 let collapsemenu=document.querySelector(".collapsemenu")
+
 //add an click event to open the collapsible menu
 menubtn.addEventListener("click",function(){
 
@@ -38,9 +39,9 @@ collapsemenu.classList.toggle("closeToOpen")
 })
 /*--modal window--*/
 //collect the element
-let card =document.querySelector(".modalwindow")
+let card =document.querySelector(".card")
 let modalwindow=document.querySelector(".modalwindow")
-let closemodel=document.querySelector("closemodel")
+let closemodel=document.querySelector(".closemodel")
 
 //add a click event to open the modal window
 card.addEventListener("click",function(){
@@ -48,11 +49,12 @@ card.addEventListener("click",function(){
 })
 
 //close the modal window by clicking on X
-emodal.addEventListener("click",function)(){
+closemodel.addEventListener("click",function(){
     modalwindow.syle.display="none"
 
-}
-//close the modal window when the user clicks anywhere on the mmodal screen
-window.addEventListener("click",function(){
-    if(this.)
+})
+//close the modal window when the user clicks anywhere on the modal screen
+window.addEventListener("click",function(event){
+    if(Event.target == modalwindow)
+    modalwindow.style.display = "none"
 })
