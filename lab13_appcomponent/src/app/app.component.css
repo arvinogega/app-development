@@ -1,0 +1,8 @@
+*{box-sizing: border-box;}
+.title{text-align: center; color: rgb(36, 42, 210);}
+.subtitle{
+    text-align: center;
+    background-color: rgb(65, 65, 192);
+    color: rgb(12, 8, 126);
+
+}
