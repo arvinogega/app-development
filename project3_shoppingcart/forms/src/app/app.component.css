@@ -1,0 +1,8 @@
+*{box-sizing: border-box; background-color: rgb(117, 199, 174);}
+
+.title{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+
+}

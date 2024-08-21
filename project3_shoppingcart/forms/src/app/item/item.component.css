@@ -1,0 +1,88 @@
+.component_title{
+    background-color: aqua;
+}
+img{
+    height:400px;
+    
+}
+
+.block{
+    text-align: center;
+    border: 2px solid rgb(14, 120, 46);
+    padding: 20px;
+}
+
+.buttoncart, .btn_out_stock{
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+}
+
+
+.buttoncart:disabled, .btn_out_stock:disabled{
+    background-color: lightgray;
+    cursor: none;
+}
+
+/* Form Error Message */
+.formErrorMsg{
+    background-color: crimson solid 2px;
+    font-weight: bold;
+}
+
+.buttoncart:disabled, .buttoncart:disabled:hover{
+    cursor: not-allowed;
+    background-color: rgba(128, 128, 128, 0.651);
+    font-weight: lighter;
+    box-shadow: none;
+}
+
+.container{
+    width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    border: solid gray 2px;
+    border-radius: 10px;
+    background-color: rgba(244, 242, 242, 0.866);
+}
+
+.buttoncart{
+    width: 100%;
+    background-color: rgb(37, 46, 163);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.buttoncart:hover{
+    background-color: crimson;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 1px gray;
+}
+
+.receipt{
+    background-color: rgb(19, 83, 22);
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.userinput{
+    padding: 10px;
+}
+
+.form_control{
+    padding: 7px;
+    text-align: center;
+}
+
+.total{
+    text-align: le;
+    border: 2px black solid;
+    background-color:rgb(200, 214, 218);
+  
+}
+
